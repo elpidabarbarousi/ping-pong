@@ -13,7 +13,7 @@ class GameSprite(sprite.Sprite):
 
 # 🧑‍🚀 Κλάση για τους παίκτες με διαφορετικά κουμπιά
 class Player(GameSprite):
-def update_r(self):  # 🔼🔽 Για τον δεξί παίκτη (πάνω-κάτω με βελάκια)
+    def update_r(self):  # 🔼🔽 Για τον δεξί παίκτη (πάνω-κάτω με βελάκια)
         keys = key.get_pressed()
         if keys[K_UP] and self.rect.y > 5:
             self.rect.y -= self.speed
